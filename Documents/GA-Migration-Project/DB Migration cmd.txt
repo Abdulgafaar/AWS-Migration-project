@@ -1,0 +1,61 @@
+1  apt-get update
+    2  sudo apt-get update
+    3  apt install mysql-client
+    4  sudo apt install mysql-client
+    5  mysql -h cs-db-1.cluster-ckasjq6emnuh.eu-west-1.rds.amazonaws.com
+    6  mysql -h cs-db-1.cluster-ckasjq6emnuh.eu-west-1.rds.amazonaws.com -u admin -p
+    7  mysql -h cs-db-1.cluster-ckasjq6emnuh.eu-west-1.rds.amazonaws.com
+    8  mysql -h cs-db-1.cluster-ckasjq6emnuh.eu-west-1.rds.amazonaws.com -u admin -p
+    9  mysql -h pgsdb-cluster.cluster-cbmxt6c1poar.eu-west-1.rds.amazonaws.com -u admin -p
+   10  exit
+   11  ls
+   12  mysql -h
+   13  mysql --help
+   14  mysql -h pgsdb-cluster.cluster-cbmxt6c1poar.eu-west-1.rds.amazonaws.com -u admin -p --ssl-ca=rds-ca-2019-eu-west-1.pem
+   15  mysql --version
+   16  apt-get purge mysql-client
+   17  sudo apt-get purge mysql-client
+   18  apt-cache search mysql | grep -i mysql
+   19  sudo apt-get install docker.io
+   20  docker exec -it mysql bash
+   21  sudo docker exec -it mysql bash
+   22  sudo docker pull mysql
+   23  sudo docker exec -it mysql bash
+   24  sudo docker run -it mysql bash
+   25  sudo docker run -it mysql:5.6 bash
+   26  sudo docker run -v .:/tmp -it mysql:5.6 mysqldump -h pgsdb-cluster.cluster-cbmxt6c1poar.eu-west-1.rds.amazonaws.com -u pgsdb -p --databases AuditLog Service.Document Service.Notification access_control posvasclient service.topup unifiedcollectionplatform  -r /tmp/pgsdb-databases.sql
+   27  sudo docker run -v ./:/tmp -it mysql:5.6 mysqldump -h pgsdb-cluster.cluster-cbmxt6c1poar.eu-west-1.rds.amazonaws.com -u pgsdb -p --databases AuditLog Service.Document Service.Notification access_control posvasclient service.topup unifiedcollectionplatform  -r /tmp/pgsdb-databases.sql
+   28  sudo docker run -v /home/ubuntu:/tmp -it mysql:5.6 mysqldump -h pgsdb-cluster.cluster-cbmxt6c1poar.eu-west-1.rds.amazonaws.com -u pgsdb -p --databases AuditLog Service.Document Service.Notification access_control posvasclient service.topup unifiedcollectionplatform  -r /tmp/pgsdb-databases.sql
+   29  ls
+   30  ls /mnt/
+   31  du -sh /mnt/pgsdb-databases.sql
+   32  tail -n 10 /mnt/pgsdb-databases.sql
+   33  ping cs-db-1.cluster-ckasjq6emnuh.eu-west-1.rds.amazonaws.com
+   34  mysql -h cs-db-1.cluster-ckasjq6emnuh.eu-west-1.rds.amazonaws.com -u xtms_config
+   35  mysql -h cs-db-1.cluster-ckasjq6emnuh.eu-west-1.rds.amazonaws.com -u xtms_config -p
+   36  mysql -h cs-db-1.cluster-ckasjq6emnuh.eu-west-1.rds.amazonaws.com -u admin -p
+   37  mysql -h cs-db-1.cluster-ckasjq6emnuh.eu-west-1.rds.amazonaws.com -u xtms_config -p
+   38  nohup mysql -h cs-db-1.cluster-ckasjq6emnuh.eu-west-1.rds.amazonaws.com -u xtms_config -p pgsdb < /mnt/pgsdb-databases.sql
+   39  tail -f nohup.out
+   40  mysql -h anpdb.cluster-cbmxt6c1poar.eu-west-1.rds.amazonaws.com
+   41  mysql -h anpdb.cluster-cbmxt6c1poar.eu-west-1.rds.amazonaws.com -u anpdb -p
+   42  clear
+   43  sudo mkfs.ext4 /dev/xvdf1
+   44  cat command
+   45  mount /dev/xvdf1 /mnt/
+   46  sudo mount /dev/xvdf1 /mnt/
+   47  sudo docker run -v /mnt:/tmp -it mysql:5.6 mysqldump -h pgsdb-cluster.cluster-cbmxt6c1poar.eu-west-1.rds.amazonaws.com -u pgsdb -p --databases AuditLog Service.Document Service.Notification access_control posvasclient service.topup unifiedcollectionplatform  -r /tmp/pgsdb-databases.sql
+   48  ls
+   49  ls /mnt/
+   50  grep CREATE DATABASE /mnt/pgsdb-databases.sql
+   51  head -n 20 /mnt/pgsdb-databases.sql
+   52  head -n 30 /mnt/pgsdb-databases.sql
+   53  grep "CREATE DATABASE" /mnt/pgsdb-databases.sql
+   54  ll
+   55  ls
+   56  rm /mnt/pgsdb-databases.sql
+   57  sudo rm /mnt/pgsdb-databases.sql
+   58  sudo docker run -v /mnt:/tmp -it mysql:5.6 mysql -h pgsdb-cluster.cluster-cbmxt6c1poar.eu-west-1.rds.amazonaws.com -u pgsdb -p
+   59  sudo rm /mnt/pgsdb-databases.sql
+   60  sudo docker run -v /mnt:/tmp -it mysql:5.6 mysql -h pgsdb-cluster.cluster-cbmxt6c1poar.eu-west-1.rds.amazonaws.com -u pgsdb -p
+   61  history
